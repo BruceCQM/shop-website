@@ -6,13 +6,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Enumeration;
 
-@WebServlet("/failServlet")
-public class failServlet extends HttpServlet {
+@WebServlet("/delCartServlet")
+public class delCartServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=utf-8");
-        response.setHeader("refresh","1.5;url='/website/index.jsp'");
-        response.getWriter().write("用户名或密码错误，请检查一下,正在返回登录页面...");
+        response.getWriter().write("付款成功!正在回到您的购物车...");
+        response.setHeader("refresh","1.5;url='/website/cart.jsp'");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
