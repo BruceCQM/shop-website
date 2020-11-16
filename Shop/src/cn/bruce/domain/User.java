@@ -1,5 +1,6 @@
 package cn.bruce.domain;
 
+//用户信息封装类
 public class User {
     private int id;
     private String username;
