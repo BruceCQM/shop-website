@@ -1,5 +1,6 @@
 package cn.bruce.domain;
 
+//商品信息封装类
 public class Goods {
     private int id;
     private String goodsname;
